@@ -73,20 +73,21 @@ header h1 {
     line-height: 1.6;
 }
 
-.btn {
+.btn, .btn-back {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 10px;
     background-color: #77aaff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
-.btn:hover {
+.btn:hover, .btn-back:hover {
     background-color: #5599dd;
 }
+
 
 .tools-methods-container {
     display: flex;
