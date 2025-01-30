@@ -1,28 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
-body {
-    font-family: 'Roboto', sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
+    flex: 0 0 8vh;
     background: #BEE3DB;
     color: #333;
-    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     border-bottom: #77aaff 3px solid;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    height: 8vh;
 }
 
 header .title {
@@ -33,39 +35,40 @@ header .title {
     color: #333;
 }
 
-.main {
-    padding: 20px;
-    background: #fff;
-    margin-top: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    height: 89vh;
-}
-
-.flex-container {
+.hero {
+    flex: 1;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
 }
 
-.caja-imagen, .caja-texto {
-    width: 100%;
-    max-width: 50%;
-    box-sizing: border-box;
-}
-
-.caja-imagen img {
-    width: 100%;
-    max-width: 100%;
+.hero img {
+    width: 30%;
+    height: auto;
     border-radius: 8px;
 }
 
-.caja-texto {
-    padding-left: 20px;
+.hero .content {
+    max-width: 600px;
+    margin-left: 20px;
 }
 
-.caja-texto h1 {
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .btn {
@@ -84,12 +87,28 @@ header .title {
 }
 
 footer {
-    padding: 20px 0;
+    flex: 0 0 8vh;
     background: #BEE3DB;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    height: 8vh;
+    padding: 20px 0;
 }
 
 footer .redes {
     margin-top: 10px;
 }
+
+footer .redes a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer .redes a:hover {
+    color: #77aaff;
+}
+
