@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #BEE3DB;
+    color: #333;
+    padding: 20px 0;
+    border-bottom: #77aaff 3px solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main {
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.stage {
+    width: 45%;
+    padding: 20px;
+    background: #e0f7f4;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.stage-left {
+    float: left;
+    clear: left;
+}
+
+.stage-right {
+    float: right;
+    clear: right;
+}
+
+.stage:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stage h2 {
+    color: #333;
+    font-weight: 500;
+}
+
+.stage p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #77aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5599dd;
+}
+
+.tools-methods-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.tools-methods, .instructional-design, .approaches {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tools-methods h2, .instructional-design h2, .approaches h2 {
+    color: #333;
+    font-weight: 500;
+}
+
+.tools-methods ul, .instructional-design ul, .approaches ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tools-methods li, .instructional-design li, .approaches li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.tools-methods i, .instructional-design i, .approaches i {
+    margin-right: 10px;
+    color: #77aaff;
+}
