@@ -79,7 +79,7 @@ ul li::before {
     color: #77aaff;
 }
 
-.analysis-image {
+.image {
     width: 100%;
     max-width: 600px;
     margin: 20px 0;
@@ -125,7 +125,7 @@ ul li::before {
         max-width: 100%;
     }
 
-    .analysis-image {
+    .image {
         max-width: 100%;
     }
 
