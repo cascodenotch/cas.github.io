@@ -6,8 +6,9 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #e0f7f4, #77aaff);
     color: #333;
+    overflow-x: hidden
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    min-height: 100vh; 
 }
 
 section {
@@ -22,12 +24,43 @@ section {
     margin: 20px 0;
 }
 
+.intro {
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.intro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.intro-content h1 {
+    font-size: 3em;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+.intro-content p {
+    font-size: 1.5em;
+    color: #666;
+}
+
 .about {
     background-color: #fff;
     padding: 50px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .about-content {
@@ -41,8 +74,9 @@ section {
 .about img {
     width: 300px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .text-content {
@@ -53,33 +87,47 @@ section {
     font-size: 2.5em;
     font-family: 'Raleway', sans-serif;
     margin: 0 0 20px 0;
+    color: #333;
 }
 
 .text-content p {
     font-size: 1.2em;
     margin: 10px 0;
+    color: #666;
 }
 
 .project {
-    background-color: #77aaff;
-    padding: 50px 0;
+    background-color: #fff;
+    padding: 50px 20px;
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-box {
     width: 300px;
     height: 300px;
-    background-color: #5599dd;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+    background-color: #77aaff;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-link {
@@ -116,11 +164,17 @@ section {
 }
 
 .social {
-    background-color: #BEE3DB;
+    background-color: #fff;
     padding: 20px 0;
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .social-links a {
@@ -128,8 +182,10 @@ section {
     margin: 0 10px;
     text-decoration: none;
     font-size: 2em;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .social-links a:hover {
     color: #77aaff;
+    transform: translateY(-5px);
 }
