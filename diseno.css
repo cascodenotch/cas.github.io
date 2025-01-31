@@ -102,3 +102,35 @@ ul li::before {
     background-color: #5599dd;
     transform: translateY(-5px);
 }
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    ul {
+        max-width: 100%;
+    }
+
+    .analysis-image {
+        max-width: 100%;
+    }
+
+    .btn-back {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}

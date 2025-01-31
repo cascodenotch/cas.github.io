@@ -129,3 +129,29 @@ header h1 {
     margin-right: 10px;
     color: #77aaff;
 }
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .stage {
+        width: 100%;
+    }
+
+    .tools-methods-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .tools-methods, .instructional-design, .approaches {
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
