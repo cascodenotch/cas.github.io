@@ -43,10 +43,10 @@ header h1 {
 
 .main {
     padding: 20px;
-    background: #fff;
     margin-top: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .stage {
@@ -58,16 +58,6 @@ header h1 {
     margin-bottom: 20px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.stage-left {
-    float: left;
-    clear: left;
-}
-
-.stage-right {
-    float: right;
-    clear: right;
 }
 
 .stage:hover {
