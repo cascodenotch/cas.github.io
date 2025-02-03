@@ -213,10 +213,6 @@ section {
     .intro-content h1 {
         font-size: 2em;
     }
-
-    .intro, .about, .project{
-    margin: 1em;
-    }
     
     .about-content {
         flex-direction: column;
@@ -250,4 +246,9 @@ section {
     .social-links a {
         font-size: 1.5em;
     }
+
+    .intro, .about, .project {
+        margin: 20px 10px;
+    }
+    
 }
