@@ -58,6 +58,11 @@ section {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.about span{
+    font-weight: bold;
+}
+
+
 .about:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -142,27 +147,32 @@ section {
     position: relative;
 }
 
-.project-link .default-text, .project-link .hover-text {
-    position: absolute;
+.project-link .default-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
     transition: opacity 0.3s;
 }
 
-.project-link .default-text {
-    opacity: 1;
-}
-
 .project-link .hover-text {
+    position: absolute;
     opacity: 0;
+    transition: opacity 0.3s;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
 }
 
-.project-link:hover .default-text {
+.project-link:hover .default-image {
     opacity: 0;
 }
 
 .project-link:hover .hover-text {
     opacity: 1;
 }
-
 .social {
     background-color: #fff;
     padding: 20px 0;

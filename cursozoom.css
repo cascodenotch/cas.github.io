@@ -24,29 +24,23 @@ body {
     margin: 20px 0;
 }
 
-header {
-    background: #BEE3DB;
-    color: #333;
-    padding: 20px 0;
-    border-bottom: #77aaff 3px solid;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    font-family: 'Raleway', sans-serif;
-}
-
-.main {
+.stages{
     padding: 20px;
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
+}
+
+.challenge {
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .stage {
@@ -60,17 +54,17 @@ header h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.stage:hover {
+.challenge:hover, .stage:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.stage h2 {
+.challenge h2, .stage h2 {
     color: #333;
     font-weight: 500;
 }
 
-.stage p {
+.challenge p, .stage p {
     color: #666;
     line-height: 1.6;
 }
@@ -136,7 +130,7 @@ header h1 {
         font-size: 1.5em;
     }
 
-    .main {
+    .container {
         flex-direction: column;
         padding: 10px;
     }
