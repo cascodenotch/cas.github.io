@@ -77,8 +77,11 @@ span{
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
     margin-top: 20px;
-    gap: 20px;
     width: 100px;
+}
+
+.btn-back{
+    margin-right: 1em;
 }
 
 .btn-back:hover, .btn-forward:hover {
