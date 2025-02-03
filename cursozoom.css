@@ -45,6 +45,7 @@ body {
     margin-bottom: 20px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
 }
 
 .stage {
@@ -56,6 +57,14 @@ body {
     margin-bottom: 20px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure the stage container is the reference for absolute positioning */
+    padding-bottom: 60px; /* Add padding to the bottom to make space for the button */
+}
+
+.stage .btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
 .challenge:hover, .stage:hover {
@@ -71,6 +80,17 @@ body {
 .challenge p, .stage p {
     color: #666;
     line-height: 1.6;
+}
+
+.challenge-content {
+    display: flex;
+    align-items: center;
+}
+
+.challenge-icon {
+    font-size: 3em;
+    color: #77aaff;
+    margin-right: 20px;
 }
 
 span {
@@ -91,6 +111,10 @@ span {
 .btn:hover, .btn-back:hover {
     background-color: #5599dd;
     transform: translateY(-5px);
+}
+
+.btn-back{
+    width: 120px;
 }
 
 .tools-methods-container {
