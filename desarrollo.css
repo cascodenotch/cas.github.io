@@ -87,7 +87,10 @@ p {
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
     .container {
+        width: 85%; /* Reduce un poco el ancho */
+        max-width: 600px; /* Para que no crezca demasiado */
         padding: 20px;
+        margin: 40px auto; /* Espacio arriba/abajo y centra horizontalmente */
     }
 
     h1 {
@@ -96,14 +99,6 @@ p {
 
     p {
         font-size: 1em;
-    }
-
-    h3 {
-        font-size: 1.5em;
-    }
-
-    ul {
-        max-width: 100%;
     }
 
     .image {
