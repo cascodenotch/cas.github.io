@@ -196,7 +196,7 @@ span {
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Ajuste de tamaño para que el título se vea bien */
     }
 
     .container {
@@ -204,22 +204,38 @@ span {
         padding: 10px;
     }
 
-    .challenge {
-        width: 90%;
+    .challenge-intro {
+        width: 90%; /* Asegura que las cajas de introducción no sean tan anchas */
+    }
+
+    .challenge-box, .intro-box {
+        width: 100%; /* Ajusta las cajas al 100% para que se vean bien en dispositivos pequeños */
+        padding: 15px; /* Reduce el padding para ahorrar espacio */
+        margin-bottom: 15px; /* Reduce el margen entre cajas */
     }
 
     .stage {
-        width: 90%;
+        width: 100%; /* Hace que las cajas de stage ocupen todo el ancho */
+        min-height: 250px; /* Ajusta la altura mínima para dispositivos pequeños */
+        padding: 15px;
     }
 
     .tools-methods-container {
         flex-direction: column;
         padding: 10px;
+        gap: 15px; /* Reduce el espacio entre elementos dentro del contenedor */
     }
 
     .tools-methods, .instructional-design, .approaches {
         margin: 10px 0;
-        padding: 10px;
-        width: 90%;
+        padding: 15px;
+        width: 100%; /* Hace que las cajas ocupen todo el ancho */
+        min-height: 220px; /* Ajusta la altura mínima de las cajas */
+    }
+
+    .btn, .btn-back {
+        width: 100%; /* Hace que los botones ocupen todo el ancho en pantallas pequeñas */
+        padding: 12px 0; /* Ajuste en el padding para hacerlo más adecuado */
+        text-align: center; /* Alineación del texto en el centro */
     }
 }
