@@ -8,38 +8,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+    <nav>
+        <ul>
+            <a href="#" onclick="changeLanguage('en'); event.preventDefault();">English</a>
+            <a href="#" onclick="changeLanguage('es'); event.preventDefault();">Español</a>
+        </ul>
+    </nav>
+
     <section class="intro">
         <div class="intro-content">
             <h1>Catalina Arciniegas Sáenz</h1>
-            <p>Diseñadora Instruccional</p>
+            <p data-i18n="profesion">Diseñadora Instruccional</p>
         </div>
     </section>
+
     <section class="about">
         <div class="about-content">
             <img src="imagenes/foto perfil.jpg" alt="Foto de perfil">
             <div class="text-content">
-                <h2>Hola,</h2>
-                <p>Soy diseñadora instruccional con un enfoque en crear <span>experiencias de aprendizaje efectivas y centradas en el usuario</span>. 
-                    Mi formación en Psicología y Desarrollo Web me permite diseñar contenidos que combinan teorías de aprendizaje y principios de UX.</p>
-                <p>Un proyecto que refleja este enfoque es un curso online que desarrollé para profesores de música que daban clases virtuales. 
-                    Me basé en datos para identificar sus necesidades y, considerando que muchos no querían lidiar con aspectos tecnológicos complejos, aseguré que el aprendizaje fuera sencillo y accesible. 
-            </div>
+                <h2 data-i18n="saludo">Hola,</h2>
+                <p data-i18n="acerca_1">Soy diseñadora instruccional con un enfoque en crear 
+                    <span data-i18n="experiencia">experiencias de aprendizaje efectivas y centradas en el usuario</span>. 
+                    Mi formación en Psicología y Desarrollo Web me permite diseñar contenidos que combinan teorías de aprendizaje y principios de UX.
+                </p>
+                <p data-i18n="acerca_2">Un proyecto que refleja este enfoque es un curso online que desarrollé para profesores de música que daban clases virtuales. 
+                    Me basé en datos para identificar sus necesidades y, considerando que muchos no querían lidiar con aspectos tecnológicos complejos, aseguré que el aprendizaje fuera sencillo y accesible.
+                </p>
+            </div>            
         </div>
     </section>
+
     <section class="project">
-        <h2>Proyectos</h2>
+        <h2 data-i18n="proyecto">Proyectos</h2>
         <div class="project-box">
             <a href="cursozoom.html" class="project-link">
                 <img src="imagenes/senior-woman-home-couch-using-laptop-guitar-lessons.jpg" alt="Online music class" class="default-image">
-                <span class="hover-text">Formación para docentes de música</span>
+                <span class="hover-text" data-i18n="titulo_proyecto">Formación para docentes de música</span>
             </a>
         </div>
     </section>
+    
     <section class="social">
         <div class="social-links">
             <a href="https://www.linkedin.com/in/catalina-arciniegas-saenz" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/cascodenotch" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
