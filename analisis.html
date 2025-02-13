@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análisis</title>
+    <title data-i18n="analysis_title">Análisis</title>
     <link rel="stylesheet" href="analisis.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>1. Análisis de necesidades</h1>
-            <p><span>Análisis del problema:</span> Registré todas las incidencias tecnológicas que surgían durante las clases. 
-                Utilicé un Excel para documentar problemas comunes con Zoom y OBS, y luego analicé los datos en Power BI para identificar patrones recurrentes. </p>
-            <p><span>Análisis de los usuarios:</span> Identifiqué que los profesores estaban agotados y no querían lidiar con aspectos tecnológicos complejos. 
-                Muchos preferían una solución sencilla y directa que no interfiriera con su labor educativa. </p>
-            <p><span>Análisis de los recursos:</span> Dado que no contábamos con presupuesto adicional, 
-                tuvimos que adaptarnos a las herramientas y plataformas tecnológicas disponibles para crear un curso accesible y eficiente.</p>
+        <h1 data-i18n="analysis_heading">1. Análisis de necesidades</h1>
+        <p data-i18n="problem_analysis_text">
+            <span data-i18n="problem_analysis_label">Análisis del problema:</span> 
+            Registré todas las incidencias tecnológicas que surgían durante las clases. 
+            Utilicé un Excel para documentar problemas comunes con Zoom y OBS, y luego analicé los datos en Power BI para identificar patrones recurrentes.
+        </p>
+        <p data-i18n="user_analysis_text">
+            <span data-i18n="user_analysis_label">Análisis de los usuarios:</span> 
+            Identifiqué que los profesores estaban agotados y no querían lidiar con aspectos tecnológicos complejos. 
+            Muchos preferían una solución sencilla y directa que no interfiriera con su labor educativa.
+        </p>
+        <p data-i18n="resource_analysis_text">
+            <span data-i18n="resource_analysis_label">Análisis de los recursos:</span> 
+            Dado que no contábamos con presupuesto adicional, 
+            tuvimos que adaptarnos a las herramientas y plataformas tecnológicas disponibles para crear un curso accesible y eficiente.
+        </p>
         <div class="buttons">
-        <a href="cursozoom.html" class="btn-back">Volver a Resumen</a>
-        <a href="diseno.html" class="btn-forward">Continuar a Diseño</a>
+            <a href="cursozoom.html" class="btn-back" data-i18n="back_button_1">Volver a Resumen</a>
+            <a href="diseno.html" class="btn-forward" data-i18n="forward_button_1">Continuar a Diseño</a>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

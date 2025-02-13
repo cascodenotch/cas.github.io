@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño</title>
+    <title data-i18n="implementation_title">Implementación</title>
     <link rel="stylesheet" href="analisis.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>4. Implementación</h1>
-        <p> <span>Migración a LearnDash:</span> Inicialmente, las píldoras de aprendizaje se enviaban por correo electrónico, lo que facilitaba la distribución, 
+        <h1 data-i18n="implementation_heading">4. Implementación</h1>
+        <p data-i18n="migration_text">
+            <span data-i18n="migration_label">Migración a LearnDash:</span>
+            Inicialmente, las píldoras de aprendizaje se enviaban por correo electrónico, lo que facilitaba la distribución, 
             pero no permitía monitorear el avance de los participantes. 
             Para optimizar este proceso, decidí migrar el curso a LearnDash, una plataforma de gestión de aprendizaje (LMS), 
-            lo que permitió una navegación más estructurada y un mejor seguimiento del desempeño de los docentes
-        <p> <span>Escucha activa y mejoras continuas:</span> Para mejorar la experiencia del curso, 
+            lo que permitió una navegación más estructurada y un mejor seguimiento del desempeño de los docentes.
+        </p>
+        <p data-i18n="active_listening_text">
+            <span data-i18n="active_listening_label">Escucha activa y mejoras continuas:</span>
+            Para mejorar la experiencia del curso, 
             revisé las respuestas de las encuestas añadidas a lo largo del curso y apliqué cambios según las necesidades de los participantes. 
             Por ejemplo, un docente comentó que los videos adicionales en inglés dificultaban su comprensión, 
             por lo que busqué referencias en español para facilitar el acceso a todos los usuarios.
         </p>
-        
         <div class="buttons">
-            <a href="desarrollo.html" class="btn-back">Volver a Creación</a>
-            <a href="evaluacion.html" class="btn-forward">Continuar a Medición</a>
+            <a href="desarrollo.html" class="btn-back" data-i18n="back_button_4">Volver a Creación</a>
+            <a href="evaluacion.html" class="btn-forward" data-i18n="forward_button_4">Continuar a Medición</a>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
